@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <h1>Index page: welcome to school website</h1><br />
+    <table>
+    <tr><td>Please select one of the options given below:
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="{% url 'common:student_login' %}">Student login</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="{% url 'teacher:teacher_home' %}">Teacher login</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="{% url 'school_admin:admin_home' %}">Admin login</a>
+        </td>
+    </tr>
+    </table>
+    
+</body>
+</html>
